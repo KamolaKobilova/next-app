@@ -4,7 +4,7 @@ import React from "react";
 const AddToCard = () => {
   return (
     <div>
-      <button onClick={() => console.log("Clicked")}>Add to card</button>
+      <button onClick={() => console.log("Clicked")}>Add to cardsss</button>
     </div>
   );
 };
