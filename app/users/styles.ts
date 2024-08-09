@@ -1,3 +1,5 @@
+// app/users/styles.ts
+
 import styled from "styled-components";
 
 // Define breakpoints
@@ -72,6 +74,33 @@ export const CardContent = styled.div`
     }
   }
 `;
+
+export const Pagination = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+`;
+
+export const PageButton = styled.button`
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+`;
+// Define breakpoints
+// const breakpoints = {
+//   mobile: "480px",
+//   tablet: "768px",
+//   desktop: "1024px",
+// };
+
 export const SearchBarInput = styled.input`
   width: 100%;
   padding: 10px;
@@ -79,6 +108,11 @@ export const SearchBarInput = styled.input`
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
 `;
 export const Button = styled.button`
   background-color: green;
@@ -93,16 +127,5 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #005bb5;
-  }
-`;
-export const PaginationButton = styled.button`
-  margin: 0 5px;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  cursor: pointer;
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
   }
 `;
